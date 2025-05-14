@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokyo Insider – A Tokyo Native’s Guide to the City</title>
+    <meta name="description" content="Discover a fresh, local perspective on Japan’s capital with Tokyo Insider – the e‑book written by a lifelong Tokyoite. Skip the tourist traps and explore authentic neighborhoods, hidden gems, and practical tips for your next Tokyo adventure." />
+    <!-- Font & basic reset -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #556b8f; /* matches cover background */
+            --secondary: #ffffff;
+            --accent: #da2128; /* subtle red accent */
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; }
+        a { color: var(--primary); text-decoration: none; }
+        img { max-width: 100%; height: auto; display: block; }
+        /* Layout */
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+        header {
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 4rem 0 2rem;
+            text-align: center;
+            position: relative;
+        }
+        header .cover {
+            margin-top: 2rem;
+            max-width: 280px;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+        }
+        header h1 { font-size: 3rem; letter-spacing: 1px; }
+        header p.tagline { margin-top: .5rem; font-size: 1.2rem; font-weight: 300; }
+        .btn-primary {
+            background: var(--accent);
+            color: var(--secondary);
+            padding: 0.9rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 1.5rem;
+            transition: opacity .25s ease;
+        }
+        .btn-primary:hover { opacity: .8; }
+        /* Sections */
+        section { padding: 4rem 0; }
+        section:nth-of-type(even) { background: #f8f9fb; }
+        h2.section-title { font-size: 2rem; margin-bottom: 1.2rem; text-align: center; color: var(--primary); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .feature-card { background: var(--secondary); border: 1px solid #e0e4e8; border-radius: 6px; padding: 1.25rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+        .feature-card img { border-radius: 4px; margin-bottom: .75rem; }
+        .feature-card h3 { font-size: 1.1rem; margin-bottom: .5rem; color: var(--primary); }
+        .author-box { display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .author-box img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-bottom: 1rem; }
+        footer { background: var(--primary); color: var(--secondary); text-align: center; padding: 2rem 0; }
+        footer p { font-size: .9rem; }
+        /* Responsive */
+        @media(min-width: 768px) {
+            header h1 { font-size: 4rem; }
+            header p.tagline { font-size: 1.35rem; }
+            .author-box { flex-direction: row; text-align: left; }
+            .author-box img { margin-right: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <header id="top">
+        <div class="container">
+            <h1>Tokyo Insider</h1>
+            <p class="tagline">A Tokyo Native’s Guide to the City</p>
+            <img src="images/tokyo_insider_cover.jpg" alt="Tokyo Insider Book Cover" class="cover" />
+            <a href="https://a.co/d/5Tei5Wv" class="btn-primary" target="_blank" rel="noopener">Buy on Amazon Kindle</a>
+        </div>
+    </header>
+
+    <!-- About the Book -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Why This Guide?</h2>
+            <p>Skip the overcrowded tourist traps and experience Tokyo the way locals do. <b>Tokyo Insider</b> curates 20+ neighborhoods and attractions hand‑picked by a lifelong Tokyoite, balancing iconic sights like Tokyo Skytree with lesser‑known gems such as Daikanyama’s boutique cafés and Mikado Game Center’s retro arcades. Each chapter packs <em>basic info, highlights, tips &amp; notes, access routes, and official links</em> so you can plan confidently and make every moment count.</p>
+        </div>
+    </section>
+
+    <!-- What You'll Discover -->
+    <section id="inside">
+        <div class="container">
+            <h2 class="section-title">What You'll Discover</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="images/sky_high.jpg" alt="Tokyo skyline from Skytree" />
+                    <h3>Sky‑High Landmarks</h3>
+                    <p>Breathtaking observation decks at <i>Tokyo Skytree</i>, <i>Tokyo Tower</i>, and the Tokyo Metropolitan Government Building – including when to go for zero lines.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/urban_oases.jpg" alt="Shinjuku Gyoen park view" />
+                    <h3>Urban Oases</h3>
+                    <p>Find peace in sprawling parks such as <i>Shinjuku Gyoen</i> and <i>Ueno Park</i> with seasonal bloom calendars and crowd‑avoidance hacks.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/stylish_neighborhoods.jpg" alt="Omotesando street scene" />
+                    <h3>Stylish Neighborhoods</h3>
+                    <p>Navigate chic enclaves from <i>Omotesando’s</i> designer boulevard to <i>Daikanyama’s</i> “library in the woods” culture scene.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/pop_culture.jpg" alt="Pokémon Center Mega Tokyo interior" />
+                    <h3>Pop‑Culture Wonderland</h3>
+                    <p>Level‑up at <i>Sunshine City’s Pokémon Center Mega Tokyo</i> and bargain‑hunt on <i>Tokyo Character Street</i> right inside Tokyo Station.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/hidden_getaways.jpg" alt="Lake Okutama scenery" />
+                    <h3>Hidden Getaways</h3>
+                    <p>Day‑trip templates to <i>Lake Okutama</i> and rooftop hot‑spring spas – perfect for recharging away from neon crowds.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/local_intel.jpg" alt="Tokyo subway ticket gates" />
+                    <h3>Local Intel</h3>
+                    <p>Practical tips on transport, ticketing, seasonal events, and cultural etiquette, all updated to March 2025.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sneak Peek CTA -->
+    <section id="preview">
+        <div class="container" style="text-align:center;">
+            <h2 class="section-title">Sneak Peek Inside</h2>
+            <p style="max-width:720px;margin:0 auto 2rem;">Download a free sample to browse the first 20 pages, including in‑depth chapters on Shinjuku Gyoen and Tokyo Tower – plus the complete table of contents.</p>
+            <a href="https://a.co/d/5Tei5Wv" class="btn-primary" target="_blank" rel="noopener">Read Free Sample</a>
+        </div>
+    </section>
+
+    <!-- Author -->
+    <section id="author">
+        <div class="container">
+            <h2 class="section-title">Meet the Author</h2>
+            <div class="author-box">
+                <img src="images/author_placeholder.jpg" alt="Author – Satoru Yamada" />
+                <div>
+                    <h3>Satoru Yamada</h3>
+                    <p>A lifelong Tokyo resident and veteran consultant with 30 years’ experience advising global clients. When he’s not cycling the backstreets of Shitamachi or scouting new cafés in Daikanyama, you’ll find him mentoring start‑ups and sipping single‑origin coffee. <b>Tokyo Insider</b> distills his on‑the‑ground insights and favorite haunts into one concise guide for savvy travelers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="features-grid" style="gap:2.5rem;">
+                <div><h3>Is the guide up‑to‑date?</h3><p>Yes. All details were verified as of March 2025, but we provide official links so you can double‑check opening hours or ticket prices before you go.</p></div>
+                <div><h3>Does it work offline?</h3><p>Certainly. Download the Kindle book to your device and you can access maps and tips even without a data connection.</p></div>
+                <div><h3>Printed version?</h3><p>At present, <b>Tokyo Insider</b> is available exclusively as an e‑book to ensure rapid updates and lightweight travel.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer>
+        <div class="container">
+            <h2 style="font-size:1.8rem;margin-bottom:.5rem;">Ready to explore Tokyo like a local?</h2>
+            <a href="https://a.co/d/5Tei5Wv" class="btn-primary" target="_blank" rel="noopener" style="margin-bottom:1.2rem;">Get Your Copy Now</a>
+            <p>&copy; <span id="year"></span> Satoru Yamada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
